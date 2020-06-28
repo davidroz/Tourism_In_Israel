@@ -1,0 +1,12 @@
+<div class="container mt-5">
+  <div class="card-deck">
+    <div class="card" *ngFor="let attraction of selectedAttractionsList">
+      <img class="img-fluid" [src]=attraction.source >
+      <div class="card-body">
+        <h2 class="card-title">{{attraction.title}}</h2>
+        <h5 class="card-text">{{attraction.description}}</h5>
+        <a href="{{attraction.information}}" class="btn btn-primary">Information</a>
+      </div>
+    </div>
+  </div>
+</div>
